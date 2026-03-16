@@ -1,0 +1,317 @@
+:root {
+  --color-darkest: #1f1a14;
+  --color-dark: #3b2f21;
+  --color-medium: #c9b894;
+  --color-light: #efe2c2;
+
+  --color-theme: #8a6d2f;
+  --color-accent: #b2462b;
+  --color-surface: rgba(31, 26, 20, 0.72);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=EB+Garamond:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "EB Garamond", Georgia, serif;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-light);
+  background:
+    radial-gradient(circle at top, rgba(171, 131, 68, 0.22), transparent 46%),
+    linear-gradient(180deg, #221b14 0%, #14100c 100%);
+  padding: 3.2rem;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 6.4rem);
+}
+
+.main {
+  width: 50rem;
+  background: var(--color-surface);
+  border: 1px solid rgba(201, 184, 148, 0.32);
+  border-radius: 16px;
+  padding: 2.4rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+.app-header {
+  width: 66rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 2rem;
+  background-color: #495057;
+  border-radius: 100px;
+}
+
+img {
+  width: 14rem;
+}
+
+h1 {
+  font-family: "Cinzel", Georgia, serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  color: #f4ebd1;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+h2 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+h4 {
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress {
+  margin-bottom: 4rem;
+  display: grid;
+  justify-content: space-between;
+  gap: 1.2rem;
+  grid-template-columns: auto auto;
+  font-size: 1.8rem;
+  color: var(--color-medium);
+}
+
+progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 12px;
+  grid-column: 1 / -1;
+}
+
+::-webkit-progress-bar {
+  background-color: var(--color-medium);
+  border-radius: 100px;
+}
+::-webkit-progress-value {
+  background-color: var(--color-theme);
+  border-radius: 100px;
+}
+
+.btn {
+  display: block;
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  border: 1px solid rgba(201, 184, 148, 0.48);
+  background-color: rgba(59, 47, 33, 0.92);
+  padding: 1.2rem 2.4rem;
+  cursor: pointer;
+  border-radius: 999px;
+  transition:
+    background-color 0.25s,
+    transform 0.25s;
+}
+
+.btn:not([disabled]):hover {
+  background-color: #51412e;
+}
+
+.btn-option:not([disabled]):hover {
+  transform: translateX(1.2rem);
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed;
+}
+
+.btn-ui {
+  float: right;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn-option {
+  width: 100%;
+  text-align: left;
+}
+
+.btn-option.correct {
+  background-color: var(--color-theme);
+  border: 2px solid var(--color-theme);
+  color: #fcf8eb;
+}
+.btn-option.wrong {
+  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  color: #fff4e6;
+}
+
+.answer {
+  transform: translateX(2rem);
+}
+
+.result {
+  background-color: var(--color-theme);
+  color: #fcf7e9;
+  border-radius: 100px;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+}
+
+.result span {
+  font-size: 2.2rem;
+  margin-right: 4px;
+}
+
+.highscore {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 1.6rem;
+
+  color: var(--color-medium);
+  font-size: 1.4rem;
+}
+
+.timer {
+  float: left;
+  font-size: 1.8rem;
+  color: var(--color-medium);
+  border: 1px solid rgba(201, 184, 148, 0.42);
+  background-color: rgba(20, 16, 12, 0.35);
+  padding: 1.35rem 2.8rem;
+  border-radius: 100px;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 1.8rem;
+  }
+
+  .app-header,
+  .main {
+    width: 100%;
+  }
+
+  .app-header {
+    gap: 1.2rem;
+    margin-bottom: 2.4rem;
+  }
+
+  img {
+    width: 8rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 50px;
+  height: 24px;
+  background:
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 0% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50%;
+  background-size: calc(100% / 3) 12px;
+  background-repeat: no-repeat;
+  animation: loader 1s infinite linear;
+}
+
+@keyframes loader {
+  20% {
+    background-position:
+      0% 0%,
+      50% 50%,
+      100% 50%;
+  }
+  40% {
+    background-position:
+      0% 100%,
+      50% 0%,
+      100% 50%;
+  }
+  60% {
+    background-position:
+      0% 50%,
+      50% 100%,
+      100% 0%;
+  }
+  80% {
+    background-position:
+      0% 50%,
+      50% 50%,
+      100% 100%;
+  }
+}
+
+/* ********** */
+/* First counter example */
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 6rem;
+}
+
+.counter * {
+  font-size: inherit;
+  padding: 0.8rem;
+}

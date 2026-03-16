@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "question": "Who is the author of the Lord of the Rings?",
+      "options": [
+        "C.S. Lewis",
+        "J.R.R. Tolkien",
+        "George R.R. Martin",
+        "J.K. Rowling"
+      ],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which creature originally found the One Ring in the river Anduin?",
+      "options": ["Gollum", "Bilbo", "Sauron", "Deagol"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What is the name of Frodo's sword?",
+      "options": ["Sting", "Glamdring", "Anduril", "Orcrist"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How many members make up the Fellowship of the Ring?",
+      "options": ["Seven", "Eight", "Nine", "Ten"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Who is the Lord of Rivendell?",
+      "options": ["Elrond", "Galadriel", "Celeborn", "Thranduil"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the Elvish word for \"friend\" used to open the Doors of Durin?",
+      "options": ["Namarië", "Mellon", "Loth", "Edro"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which of these Hobbits did NOT journey with Frodo from the Shire?",
+      "options": [
+        "Samwise Gamgee",
+        "Meriadoc Brandybuck",
+        "Peregrin Took",
+        "Fredegar Bolger"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What is the name of the giant spider that attacks Frodo?",
+      "options": ["Ungoliant", "Aragog", "Shelob", "Goliath"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Who kills the Witch-king of Angmar?",
+      "options": ["Aragorn", "Gandalf", "Faramir", "Eowyn and Merry"],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the name of Gandalf's horse?",
+      "options": ["Snowmane", "Brego", "Arod", "Shadowfax"],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What unique gift does Galadriel give to Gimli?",
+      "options": [
+        "A golden belt",
+        "A silver bow",
+        "Three strands of her hair",
+        "An Elven cloak"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which kingdom is ruled by King Theoden?",
+      "options": ["Gondor", "Rohan", "Eriador", "Mordor"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Who is the father of Boromir and Faramir?",
+      "options": ["Theoden", "Imrahil", "Denethor", "Eomer"],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "The One Ring was destroyed in the fires of Mount Doom.",
+      "options": [
+        "True",
+        "It was destroyed by dragon fire",
+        "False",
+        "It was thrown into the sea"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "Who was the original Dark Lord, the master of Sauron?",
+      "options": ["Saruman", "Smaug", "Glaurung", "Morgoth"],
+      "correctOption": 3,
+      "points": 20
+    }
+  ]
+}

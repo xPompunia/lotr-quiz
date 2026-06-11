@@ -1,44 +1,22 @@
-# LOTR Quiz App
+# LOTR Quiz
 
-A simple React quiz app about The Lord of the Rings.
+Simple React quiz app about The Lord of the Rings — timed questions, scoring,
+and a high-score screen. State is managed with the Context API + `useReducer`;
+questions are served by json-server.
 
-## Tech
+## Running
 
-- React
-- Context API + useReducer
-- json-server (for quiz questions)
+```bash
+npm install
+npm run server   # json-server with the questions on port 9000
+npm start        # React dev server, in a second terminal
+```
 
-## Run locally
-
-1. Install dependencies:
-
-   npm install
-
-2. Start API server (questions):
-
-   npm run server
-
-3. In a second terminal, start React app:
-
-   npm start
-
-4. Open:
-
-   http://localhost:3000
-
-## Available scripts
-
-- npm start: starts React development server
-- npm run server: starts json-server on port 9000
-- npm test: runs tests
-- npm run build: creates production build
+Open http://localhost:3000. If questions do not load, make sure
+`npm run server` is running.
 
 ## Project structure
 
-- src: app version using Context API
-- src-no-context: version without Context API
-- data/questions.json: quiz data source for json-server
-
-## Notes
-
-- If questions do not load, make sure npm run server is running on port 9000.
+- `src/components` — quiz screens and UI
+- `src/contexts/QuizContext.js` — quiz state (Context API + reducer)
+- `data/questions.json` — quiz data served by json-server
